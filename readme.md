@@ -111,7 +111,7 @@ This exports the tar archive directly to `stdout`.
 ollama-export mistral:latest -o | tar -tvf -
 ```
 
-Sure! Here's the **pipe to stdout** usage example with `zstd` compression:
+Sure! Here's the **pipe to stdout** usage example with `zstd` compression: (lol I forget to remove chatgpt prompt)
 
 ---
 
@@ -164,6 +164,37 @@ echo $env:OLLAMA_PATH
 ```
 
 If it doesn't point to the right folder, update it accordingly.
+
+### Potential Ollama Model Directory Paths:
+
+#### Linux
+
+1. **Home directory (default)**  
+   If installed per user, Ollama’s model files are usually stored in a hidden directory inside the user’s home folder:
+   ```bash
+   ~/.ollama
+   ```
+
+2. **System-wide (root)**  
+   In case of a system-wide installation (for all users), it might be in:
+   ```bash
+   /opt/ollama/.ollama
+   ```
+
+#### macOS
+
+1. **Home directory (default)**  
+   Similar to Linux, the default path for individual user installations is:
+   ```bash
+   ~/.ollama
+   ```
+
+2. **Homebrew Installation**  
+   If you installed Ollama using Homebrew, the models might be found here:
+   ```bash
+   /usr/local/opt/ollama/.ollama
+   ```
+
 
 ---
 
