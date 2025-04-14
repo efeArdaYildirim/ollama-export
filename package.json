@@ -1,0 +1,20 @@
+{
+  "name": "ollama-export",
+  "version": "1.0.0",
+  "description": "A simple Node.js CLI utility to export Ollama models as .tar or tar streams. You can use this tool to archive and transport models managed by Ollama, especially when moving between systems or performing backups.",
+  "main": "index.js",
+  "bin": {
+    "ollama-export": "index.js",
+    "oexport": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["ollama","ollama-export","oexport","tar","export"],
+  "author": "Efe A. YILDIRIM",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "tar": "^7.4.3"
+  }
+}
